@@ -184,13 +184,14 @@ header {
     border-bottom: 1px solid #8c8c8c; 
 }
 
-.nav .container {
-    min-width: 59em;
+.nav .container{
+      width: 100%;
+    max-width: 59em;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem; 
+    padding: 0 1em;
 }
 
 /* ------------------ */
@@ -204,10 +205,10 @@ header {
     align-items: center;
     gap: 2rem; 
 }
-.menu{
+.nav-menu-icon{
     display: none;
 }
-.menu img{
+.nav-menu-icon img{
     max-width: 3em;
     transition: all 0.3s ease-in;
 }
@@ -676,8 +677,8 @@ header {
     .info{
         display: none;
     }
-    .menu{
-        display:inline-block;
+    .nav-menu-icon{
+         display: block 
     }
 
     .section-title{
@@ -734,6 +735,9 @@ header {
 }
 
 @media(max-width: 450px){
+    .grid-body{
+        grid-template-columns: repeat(2, 1fr);
+    } 
     .question-body::before {
         background: none;
     }
