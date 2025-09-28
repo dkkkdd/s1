@@ -150,10 +150,7 @@ body{
         85% 55%,
         18% 99%,
         85% 95%;
-    /* background-size:
-        150px 150px,
-        120px 120px,
-        100px 100px; */
+
     background-repeat: no-repeat;
 }
 /* ----------HEADER/NAV--------------------------- */
@@ -213,7 +210,7 @@ header {
     transition: all 0.3s ease-in;
 }
 
-.menu img:hover{
+.nav-menu-icon img:hover{
     transform: scale(1.1);
 }
 
