@@ -615,28 +615,7 @@ header {
 .footer-sub-link:hover{
     color: #c2c2c2;
 }
-/* =============DECORE ELEMENTS================================== */
 
-
-#b1{
-    top: 12em;
-    left: 0;
-}
-#b2{
-    top: 5em;
-    right: -4.5em;
-    transform: rotate(180deg);
-}
-
-#b3{
-    bottom: 4em;
-    right: 10em;
-}
-
-#b4{
-    bottom: 0;
-    left: 0;
-}
 
 /* ===========ADAPTATION=================================== */
 
