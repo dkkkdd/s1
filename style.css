@@ -238,11 +238,16 @@ header {
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+    align-items: stretch; /* ключевой момент */
     gap: 0.5em;
 }
 .grid-card{
+    display: flex;
+    flex-direction: column;   /* вертикально */
+    justify-content: space-between; /* контент растягивается равномерно */
     border-radius: 0.5em;
     transition: all 0.3s ease-in;
+    height: 100%;  /* карточка тянется на всю высоту grid */
 }
 .grid-card:hover{
     box-shadow: 0 0 16px #404040;
@@ -614,6 +619,11 @@ header {
     color: #c2c2c2;
 }
 
+.footer-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
 
 /* ===========ADAPTATION=================================== */
 
