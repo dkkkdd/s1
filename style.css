@@ -131,15 +131,15 @@ body{
     pointer-events: none; 
     z-index: 999;
     background-image:
-        url('/img/berry2.png'),
-        url('/img/leaf.png'),
-        url('/img/berry5.png'),
-        url('/img/berry.png'),
-        url('/img/berry3.png'),
-        url('/img/berry4.svg'),
-        url('/img/berry4.svg'),
-        url('/img/berry.png'),
-        url('/img/leaf2.png');
+        url('img/berry2.png'),
+        url('img/leaf.png'),
+        url('img/berry5.png'),
+        url('img/berry.png'),
+        url('img/berry3.png'),
+        url('img/berry4.svg'),
+        url('img/berry4.svg'),
+        url('img/berry.png'),
+        url('img/leaf2.png');
     background-position:
         0% 2%, 
         0% 10%, 
@@ -163,7 +163,7 @@ header {
     position: relative;
     width: 100%;
     color: #fff;
-    background: url('/img/bg.png') no-repeat center center;
+    background: url('img/bg.png') no-repeat center center;
     background-size: cover; 
     background-position:bottom;
     background-repeat: no-repeat;
@@ -341,7 +341,7 @@ header {
     right: 0;
     width: 40%;
     height: 100%;
-    background: url('/img/woman.png') right center / contain no-repeat;
+    background: url('img/woman.png') right center / contain no-repeat;
 }
 
 .question-sub-title li{
@@ -581,7 +581,7 @@ header {
 }
 
 .footer-input {
-    background: url('/img/footer-phone.svg') no-repeat 1em center; 
+    background: url('img/footer-phone.svg') no-repeat 1em center; 
     font-size: 0.9em;
     background-color: #eef0ff;
     border-radius: 0.4em;
