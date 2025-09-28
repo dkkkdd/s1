@@ -677,7 +677,7 @@ header {
         display: none;
     }
     .menu{
-        display: block;
+        display:inline-block;
     }
 
     .section-title{
