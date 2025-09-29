@@ -45,7 +45,7 @@ body{
     justify-content: center;  
     border-radius: 0.4em;
     background-color: rgb(255, 191, 71);
-    color: #404040;
+    color: #000;
     padding: 1.5em 2.5em;
     font-size: 0.9em;
     cursor: pointer;
@@ -221,6 +221,100 @@ header {
     font-weight: bold;
 }
 
+
+.nav-modal-info{
+    padding-left: 0;
+}
+.nav-modal{
+    position: absolute;
+    top: 8%;
+    right: 1%;
+    max-width: 40em;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+.nav-modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: #404040;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 2em;
+    box-shadow: 0 0 16px #3a3a3a;
+}
+
+.grid-modal-window{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    transition: all 0.2s ease;
+    z-index: 999;
+}
+.grid-modal-close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.grid-modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #fff;
+    color: #404040;
+    border-radius: 0.5em;
+    padding: 2em 4em 4em 4em;
+    max-width: 70%;
+    box-shadow: 0 0 16px #7e7e7e;
+}
+
+.grid-modal-image {
+    width: 100%;       
+    max-height: 15em;   
+    border-radius: 0.5em;
+    overflow: hidden;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.grid-modal-image img {
+    width: 100%; 
+    height: 100%;    
+    object-fit: cover;  
+    object-position: center center;
+    opacity: 0.6;
+}
+
+
+
+.grid-modal-content {
+    overflow: hidden;   
+}
+
+
+.grid-modal-description,
+.composition,
+.kpbzu {
+    margin-bottom: 0.5em;
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
 /* ===================MAIN======================================================== */
 /* ---------------GRID SECTION------------------- */
 
@@ -238,16 +332,16 @@ header {
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
-    align-items: stretch; /* ключевой момент */
+    align-items: stretch; 
     gap: 0.5em;
 }
 .grid-card{
     display: flex;
-    flex-direction: column;   /* вертикально */
-    justify-content: space-between; /* контент растягивается равномерно */
+    flex-direction: column;  
+    justify-content: space-between; 
     border-radius: 0.5em;
     transition: all 0.3s ease-in;
-    height: 100%;  /* карточка тянется на всю высоту grid */
+    height: 100%; 
 }
 .grid-card:hover{
     box-shadow: 0 0 16px #404040;
@@ -267,6 +361,9 @@ header {
 .grid-sub-title{
     font-size: 0.8em;
     line-height: 150%;
+}
+.grid-modal-title{
+    font-size: 2em;
 }
 
 .grid-price{
@@ -495,13 +592,13 @@ header {
 }
 
 .swiper-btn-prev::after{
-    content: '<';
-     font-size: 2em;
+    content: url(img/arrowleft.svg);
+    font-size: 2em;
     color: #404040;
 }
 .swiper-btn-next::after {
-  
- content: '>';   
+    content: url(img/arrowleft.svg);  
+    transform: rotate(180deg); 
     font-size: 2em;
      font-size: 2em;
     color: #404040;
@@ -597,6 +694,7 @@ header {
 }
 
 .footer-sub-content{
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -616,7 +714,7 @@ header {
 }
 
 .footer-sub-link:hover{
-    color: #c2c2c2;
+    color: #bdbdbd;
 }
 
 .footer-checkbox{
@@ -723,6 +821,10 @@ header {
     body{
         font-size: 12px;
     }
+    .grid-modal-body{
+        padding: 2.5em 1em 1em 1em;
+        max-width: 90%;
+}
    .swiper-wrapper{
         max-width: 40em;
     }
